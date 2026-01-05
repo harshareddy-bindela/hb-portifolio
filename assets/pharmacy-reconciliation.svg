@@ -1,0 +1,76 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#4A90E2"/>
+  
+  <!-- Title Background -->
+  <rect x="0" y="0" width="800" height="120" fill="#2C5282" opacity="0.9"/>
+  
+  <!-- Main Title -->
+  <text x="400" y="50" font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="#FFFFFF" text-anchor="middle">340B Reconciliation</text>
+  <text x="400" y="90" font-family="Arial, sans-serif" font-size="24" fill="#E2E8F0" text-anchor="middle">Pharmacy Data Platform</text>
+  
+  <!-- Database/Server Icon (Left) -->
+  <rect x="100" y="180" width="180" height="280" rx="10" fill="#FFFFFF" opacity="0.95"/>
+  <rect x="120" y="200" width="140" height="30" rx="5" fill="#4299E1"/>
+  <text x="190" y="220" font-family="Arial" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle">Database</text>
+  
+  <!-- Data rows -->
+  <rect x="130" y="250" width="120" height="20" rx="3" fill="#E2E8F0"/>
+  <rect x="130" y="280" width="120" height="20" rx="3" fill="#E2E8F0"/>
+  <rect x="130" y="310" width="120" height="20" rx="3" fill="#E2E8F0"/>
+  <rect x="130" y="340" width="120" height="20" rx="3" fill="#E2E8F0"/>
+  <rect x="130" y="370" width="120" height="20" rx="3" fill="#E2E8F0"/>
+  
+  <!-- Arrow (Middle) -->
+  <path d="M 320 320 L 420 320" stroke="#FFFFFF" stroke-width="6" fill="none" marker-end="url(#arrowhead)"/>
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#FFFFFF"/>
+    </marker>
+  </defs>
+  
+  <!-- Processing/Validation Icon (Center) -->
+  <circle cx="500" cy="320" r="80" fill="#FFFFFF" opacity="0.95"/>
+  <text x="500" y="305" font-family="Arial" font-size="18" font-weight="bold" fill="#2C5282" text-anchor="middle">ETL</text>
+  <text x="500" y="330" font-family="Arial" font-size="18" font-weight="bold" fill="#2C5282" text-anchor="middle">Pipeline</text>
+  <text x="500" y="355" font-family="Arial" font-size="14" fill="#4A5568" text-anchor="middle">Validation</text>
+  
+  <!-- Arrow (Right) -->
+  <path d="M 580 320 L 680 320" stroke="#FFFFFF" stroke-width="6" fill="none" marker-end="url(#arrowhead2)"/>
+  <defs>
+    <marker id="arrowhead2" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#FFFFFF"/>
+    </marker>
+  </defs>
+  
+  <!-- Report/Output Icon (Right) -->
+  <rect x="520" y="180" width="180" height="280" rx="10" fill="#FFFFFF" opacity="0.95"/>
+  <rect x="540" y="200" width="140" height="30" rx="5" fill="#48BB78"/>
+  <text x="610" y="220" font-family="Arial" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle">Reports</text>
+  
+  <!-- Report lines -->
+  <rect x="550" y="250" width="120" height="15" rx="2" fill="#C6F6D5"/>
+  <rect x="550" y="275" width="120" height="15" rx="2" fill="#C6F6D5"/>
+  <rect x="550" y="300" width="120" height="15" rx="2" fill="#C6F6D5"/>
+  <rect x="550" y="325" width="120" height="15" rx="2" fill="#C6F6D5"/>
+  <rect x="550" y="350" width="120" height="15" rx="2" fill="#C6F6D5"/>
+  <rect x="550" y="375" width="120" height="15" rx="2" fill="#C6F6D5"/>
+  <rect x="550" y="400" width="120" height="15" rx="2" fill="#C6F6D5"/>
+  
+  <!-- Feature tags at bottom -->
+  <rect x="50" y="500" width="140" height="60" rx="8" fill="#FFFFFF" opacity="0.9"/>
+  <text x="120" y="525" font-family="Arial" font-size="12" font-weight="bold" fill="#2C5282" text-anchor="middle">NDC Validation</text>
+  <text x="120" y="545" font-family="Arial" font-size="12" fill="#4A5568" text-anchor="middle">NPI Validation</text>
+  
+  <rect x="220" y="500" width="140" height="60" rx="8" fill="#FFFFFF" opacity="0.9"/>
+  <text x="290" y="525" font-family="Arial" font-size="12" font-weight="bold" fill="#2C5282" text-anchor="middle">340B ESP</text>
+  <text x="290" y="545" font-family="Arial" font-size="12" fill="#4A5568" text-anchor="middle">Compliance</text>
+  
+  <rect x="390" y="500" width="140" height="60" rx="8" fill="#FFFFFF" opacity="0.9"/>
+  <text x="460" y="525" font-family="Arial" font-size="12" font-weight="bold" fill="#2C5282" text-anchor="middle">Automated</text>
+  <text x="460" y="545" font-family="Arial" font-size="12" fill="#4A5568" text-anchor="middle">Reporting</text>
+  
+  <rect x="560" y="500" width="140" height="60" rx="8" fill="#FFFFFF" opacity="0.9"/>
+  <text x="630" y="525" font-family="Arial" font-size="12" font-weight="bold" fill="#2C5282" text-anchor="middle">Data</text>
+  <text x="630" y="545" font-family="Arial" font-size="12" fill="#4A5568" text-anchor="middle">Reconciliation</text>
+</svg>
