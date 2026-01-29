@@ -584,9 +584,10 @@ section {
 
 
 
-.details-container:hover {
-  transform: translateY(-5px);
-  /* box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); */
+@media (hover: hover) {
+  .details-container:hover {
+    transform: translateY(-5px);
+  }
 }
 
 section {
@@ -627,16 +628,51 @@ section {
 }
 
 
-#projects .experience-details-container {
+#projects .experience-details-container.projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjusted grid */
-  gap: 20px; /* Reduced space between projects */
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
+  gap: 1.5rem;
   width: 100%;
-  max-width: 1400px;
-  margin: auto;
-  padding: 20px;
-  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  align-items: start;
 }
+
+#projects .project-card {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  text-align: left;
+  overflow: hidden;
+  min-width: 0;
+}
+
+#projects .project-card .article-container {
+  flex-wrap: nowrap;
+  flex-direction: column;
+  gap: 0;
+  justify-content: center;
+  align-items: stretch;
+}
+
+#projects .project-img-wrapper {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  max-height: 200px;
+  overflow: hidden;
+  border-radius: 1rem;
+  flex-shrink: 0;
+}
+
+#projects .project-img-wrapper .project-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
 .article-container {
   display: flex;
   text-align: initial;
@@ -660,27 +696,28 @@ article .icon {
 /* PROJECTS SECTION */
 
 #projects {
-  position:inherit;
-  padding: 40px 20px;
-  /* background-color: #f9f9f9; */
+  position: inherit;
+  padding: 2rem 1rem;
+  overflow-x: hidden;
+  box-sizing: border-box;
 }
 
 .footer {
   text-align: center;
 }
 
-.color-container {
+#projects .color-container {
   border-color: rgb(163, 163, 163);
   background: rgb(250, 250, 250);
   width: 100%;
   max-width: 100%;
   box-sizing: border-box;
   padding: 1rem;
-  margin: 0 auto;
+  margin: 0;
 }
 
 .project-img {
-  border-radius: 2rem;
+  border-radius: 1rem;
   width: 100%;
   max-width: 100%;
   height: auto;
@@ -698,9 +735,21 @@ article .icon {
   height: auto;
 }
 
-.project-title {
-  margin: 1rem;
-  color: black;
+#projects .project-title {
+  margin: 0.75rem 0 0.5rem;
+  color: #333;
+  text-align: center;
+}
+
+#projects .brief-description {
+  margin-bottom: 0.75rem;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+#projects .btn-container {
+  margin-top: auto;
+  padding-top: 0.5rem;
 }
 
 .project-btn {
